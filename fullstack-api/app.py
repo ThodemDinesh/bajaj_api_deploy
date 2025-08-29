@@ -12,8 +12,8 @@ def process_data():
 
         # --- Personal Information ---
         # Replace with your actual details
-        full_name = "THODEM VENKATA DINESH REDDY"  # e.g., "John Doe"
-        dob = "18122004"              # e.g., "17091999"
+        full_name = "THODEM VENKATA DINESH REDDY"
+        dob = "18122004"
         email = "thodemdinesh2004@gmail.com"
         roll_number = "22BIT0197"
 
@@ -51,14 +51,14 @@ def process_data():
                 # It's a special character
                 special_characters.append(item)
 
-        # --- Create the Concatenated and Reversed String with Alternating Caps ---
+        # --- CORRECTED LOGIC for Concatenated and Reversed String ---
         reversed_alpha = alpha_chars[::-1]
         concat_string = ""
         for i, char in enumerate(reversed_alpha):
             if i % 2 == 0:
-                concat_string += char.lower()
+                concat_string += char.upper()  # First character is uppercase
             else:
-                concat_string += char.upper()
+                concat_string += char.lower()  # Second character is lowercase
 
         # --- Construct the Final Response ---
         response = {
@@ -85,5 +85,4 @@ def process_data():
 
 if __name__ == '__main__':
     # Note: For deployment, a production server like Gunicorn should be used.
-    # The host '0.0.0.0' makes the app accessible on your local network.
     app.run(host='0.0.0.0', port=5000, debug=True)
