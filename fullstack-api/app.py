@@ -2,6 +2,7 @@
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+app.config['JSON_SORT_KEYS'] = False
 
 @app.route('/bfhl', methods=['POST'])
 def process_data():
