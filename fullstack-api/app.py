@@ -12,10 +12,10 @@ def process_data():
 
         # --- Personal Information ---
         # Replace with your actual details
-        full_name = "Your Full Name"  # e.g., "John Doe"
-        dob = "DDMMYYYY"              # e.g., "17091999"
-        email = "your.email@example.com"
-        roll_number = "YourRollNumber"
+        full_name = "THODEM VENKATA DINESH REDDY"  # e.g., "John Doe"
+        dob = "18122004"              # e.g., "17091999"
+        email = "thodemdinesh2004@gmail.com"
+        roll_number = "22BIT0197"
 
         # --- Initialize Response Lists and Variables ---
         even_numbers = []
